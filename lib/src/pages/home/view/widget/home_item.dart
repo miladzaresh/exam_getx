@@ -32,12 +32,13 @@ class HomeItem extends GetView<HomeController> {
             width: 35,
             height: 35,
             decoration: BoxDecoration(
-              color: Colors.grey.shade700,
+              
+                color: Colors.grey.shade700,
               borderRadius: BorderRadius.circular(8)
             ),
           ),
           onTap:(){
-            controller.goToDetails(item.id);
+            // controller.goToDetails(item.id);
           },
         ),
         margin: EdgeInsets.symmetric(horizontal: 16),

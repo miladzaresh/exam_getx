@@ -4,6 +4,8 @@ import 'package:price_management/src/pages/add_todo_fee/common/add_todo_fee_bind
 import 'package:price_management/src/pages/add_todo_fee/view/add_todo_fee_screen.dart';
 import 'package:price_management/src/pages/home/common/home_binding.dart';
 import 'package:price_management/src/pages/home/view/home_screeen.dart';
+import 'package:price_management/src/pages/post_detsilas/common/post_details_binding.dart';
+import 'package:price_management/src/pages/post_detsilas/view/post_details_screen.dart';
 import 'package:price_management/src/pages/splash/common/splash_binding.dart';
 import 'package:price_management/src/pages/splash/view/splash_screen.dart';
 import 'package:price_management/src/pages/todo_fee_details/common/todo_fee_details_binding.dart';
@@ -29,6 +31,11 @@ class RoutePage {
             name: RoutePath.addTodoFeeDetails,
             page: () => TodoFeeDetailsScreen(),
             binding: TodoFeeDetailsBinding(),
+          ),
+          GetPage(
+            name: RoutePath.postDetails,
+            page: () =>PostDetailsScreen(),
+            binding: PostDetailsBinding(),
           )
         ])
   ];
